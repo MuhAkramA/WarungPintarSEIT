@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-03-25T07:54:46.731Z",
+    "end": "2021-03-25T07:54:53.052Z",
+    "duration": 6321,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "557c5226-342e-4f91-8cc7-3068a9a63880",
+      "title": "",
+      "fullFile": "cypress\\integration\\examples\\registrasi-individu-mandiri.js",
+      "file": "cypress\\integration\\examples\\registrasi-individu-mandiri.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cd0bba13-dd3e-4fbd-a50c-feeeee854287",
+          "title": "My First Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login",
+              "fullTitle": "My First Test login",
+              "timedOut": null,
+              "duration": 5061,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://dev.tanamduit.com/index.php?rt=account/registration&client=individual\");\ncy.get(\"#beneficial_option label\").eq(0).click();\ncy.get(\"#id_number\").type(\"3604091208990009\");\ncy.get('#fullname').type('roberto baggio');\nvar filepath = 'images/Capture.png';\ncy.get('#ktp').attachFile(filepath);\ncy.get('#selfie').attachFile(filepath);\ncy.get(\"#mother_name\").type('sunsilk');\ncy.get('#place_of_birth').type(\"nugini\");\ncy.get('#date_of_birth').click();\ncy.get('.ui-datepicker-month').select('2');\ncy.get('.ui-datepicker-year').select('1983');\ncy.get('.ui-datepicker-calendar').contains('1').click();\ncy.get('#gender').contains(\"Laki-laki\").click();\ncy.get('#marital_status label:nth-child(2)').click();\ncy.get(\"#education\").select('5');\ncy.get(\"#religion\").select('1');\ncy.get(\"#mobile_phone_number\").type('9182373134');\ncy.get(\"#email\").type('aszzkd@gmail.com');\ncy.get(\"#occupation\").select('2');\ncy.get(\"#gross_income\").select('3');\ncy.get(\"#source_of_fund\").select('7');\ncy.get(\"#investment_objective\").select('2');\ncy.get(\"#next_step_1\").click();",
+              "err": {},
+              "uuid": "672b89a8-ae64-40e7-8845-6673586e29d2",
+              "parentUUID": "cd0bba13-dd3e-4fbd-a50c-feeeee854287",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "672b89a8-ae64-40e7-8845-6673586e29d2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5061,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.2.0"
+    }
+  }
+}
