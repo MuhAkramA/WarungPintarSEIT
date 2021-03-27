@@ -10,7 +10,7 @@ describe('My First Test', function() {
     cy.get("#password").type("Password123")
     cy.get("#dologin").click()
     cy.get("div div .overview-tabs a span").eq(2).click()
- 
+    cy.get(".transactions-btn-row").contains("PRINT").eq(0).click()
     // cy.get(".product-buy").eq(0).contains('BELI').click()
   //   cy.get('#buy_amount').type("500000")
   //   cy.get('button.btn-buy-continue').contains("LANJUT").click()
