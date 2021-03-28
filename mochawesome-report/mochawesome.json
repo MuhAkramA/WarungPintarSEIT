@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-03-25T07:54:46.731Z",
-    "end": "2021-03-25T07:54:53.052Z",
-    "duration": 6321,
+    "start": "2021-03-27T16:40:51.739Z",
+    "end": "2021-03-27T16:40:57.847Z",
+    "duration": 6108,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "557c5226-342e-4f91-8cc7-3068a9a63880",
+      "uuid": "6f906d93-e986-493a-aa3e-ffbd6f48ca5c",
       "title": "",
       "fullFile": "cypress\\integration\\examples\\registrasi-individu-mandiri.js",
       "file": "cypress\\integration\\examples\\registrasi-individu-mandiri.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "cd0bba13-dd3e-4fbd-a50c-feeeee854287",
+          "uuid": "de768233-2385-4766-addf-72c37a9aeba6",
           "title": "My First Test",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "login",
               "fullTitle": "My First Test login",
               "timedOut": null,
-              "duration": 5061,
+              "duration": 4854,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit(\"https://dev.tanamduit.com/index.php?rt=account/registration&client=individual\");\ncy.get(\"#beneficial_option label\").eq(0).click();\ncy.get(\"#id_number\").type(\"3604091208990009\");\ncy.get('#fullname').type('roberto baggio');\nvar filepath = 'images/Capture.png';\ncy.get('#ktp').attachFile(filepath);\ncy.get('#selfie').attachFile(filepath);\ncy.get(\"#mother_name\").type('sunsilk');\ncy.get('#place_of_birth').type(\"nugini\");\ncy.get('#date_of_birth').click();\ncy.get('.ui-datepicker-month').select('2');\ncy.get('.ui-datepicker-year').select('1983');\ncy.get('.ui-datepicker-calendar').contains('1').click();\ncy.get('#gender').contains(\"Laki-laki\").click();\ncy.get('#marital_status label:nth-child(2)').click();\ncy.get(\"#education\").select('5');\ncy.get(\"#religion\").select('1');\ncy.get(\"#mobile_phone_number\").type('9182373134');\ncy.get(\"#email\").type('aszzkd@gmail.com');\ncy.get(\"#occupation\").select('2');\ncy.get(\"#gross_income\").select('3');\ncy.get(\"#source_of_fund\").select('7');\ncy.get(\"#investment_objective\").select('2');\ncy.get(\"#next_step_1\").click();",
               "err": {},
-              "uuid": "672b89a8-ae64-40e7-8845-6673586e29d2",
-              "parentUUID": "cd0bba13-dd3e-4fbd-a50c-feeeee854287",
+              "uuid": "8d2c0dd0-59a6-4ae3-b7fe-841079f72ccd",
+              "parentUUID": "de768233-2385-4766-addf-72c37a9aeba6",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "672b89a8-ae64-40e7-8845-6673586e29d2"
+            "8d2c0dd0-59a6-4ae3-b7fe-841079f72ccd"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5061,
+          "duration": 4854,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
