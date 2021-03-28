@@ -2,7 +2,6 @@
 /// <reference types="cypress" />
 
 // type definitions for custom commands like "createDefaultTodos"
-/// <reference types="../support" />
 describe('My First Test', function() {
   it('login', function() {
     cy.visit("https://dev.tanamduit.com/index.php?rt=account/registration&client=individual")
