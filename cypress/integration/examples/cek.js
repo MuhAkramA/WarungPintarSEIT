@@ -1,8 +1,7 @@
 // type definitions for Cypress object "cy"
-// <reference types="Cypress" />
+/// <reference types="Cypress" />
 
 // type definitions for custom commands like "createDefaultTodos"
-/// <reference types="../support" />
 describe('My First Test', function() {
   it('login', function() {
     cy.visit("https://dev.tanamduit.com//corp//account/login");
