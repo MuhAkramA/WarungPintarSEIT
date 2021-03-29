@@ -30,5 +30,6 @@ describe('My First Test', function() {
       cy.get("#gross_income").select('3')
       cy.get("#source_of_fund").select('7')
       cy.get("#investment_objective").select('2')
+      asd
     })
     })
