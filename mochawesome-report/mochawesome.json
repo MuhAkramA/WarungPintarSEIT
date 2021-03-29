@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 1,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2021-03-29T04:38:16.273Z",
-    "end": "2021-03-29T04:38:22.451Z",
-    "duration": 6178,
+    "failures": 1,
+    "start": "2021-03-29T05:10:45.375Z",
+    "end": "2021-03-29T05:11:46.325Z",
+    "duration": 60950,
     "testsRegistered": 1,
-    "passPercent": 100,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "1e903d90-3313-4d4a-b553-d978f23351fb",
+      "uuid": "5ec1e599-a7e0-4589-ae54-2217907430db",
       "title": "",
       "fullFile": "cypress\\integration\\examples\\registrasi-individu-mandiri.js",
       "file": "cypress\\integration\\examples\\registrasi-individu-mandiri.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "efcd74b9-9b90-4fd4-b4b4-75f088432c3e",
+          "uuid": "ad6e5cac-ca80-4cad-8876-06c5cfc30ef3",
           "title": "My First Test",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,33 @@
               "title": "login",
               "fullTitle": "My First Test login",
               "timedOut": null,
-              "duration": 5508,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
+              "duration": 60297,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "cy.visit(\"https://dev.tanamduit.com/index.php?rt=account/registration&client=individual\");\ncy.get(\"#beneficial_option label\").eq(0).click();\ncy.get(\"#id_number\").type(\"3604091208990009\");\ncy.get('#fullname').type('roberto baggio');\nvar filepath = 'images/Capture.png';\ncy.get('#ktp').attachFile(filepath);\ncy.get('#selfie').attachFile(filepath);\ncy.get(\"#mother_name\").type('sunsilk');\ncy.get('#place_of_birth').type(\"nugini\");\ncy.get('#date_of_birth').click();\ncy.get('.ui-datepicker-month').select('2');\ncy.get('.ui-datepicker-year').select('1983');\ncy.get('.ui-datepicker-calendar').contains('1').click();\ncy.get('#gender').contains(\"Laki-laki\").click();\ncy.get('#marital_status label:nth-child(2)').click();\ncy.get(\"#education\").select('5');\ncy.get(\"#religion\").select('1');\ncy.get(\"#mobile_phone_number\").type('9182373134');\ncy.get(\"#email\").type('aszzkd@gmail.com');\ncy.get(\"#occupation\").select('2');\ncy.get(\"#gross_income\").select('3');\ncy.get(\"#source_of_fund\").select('7');\ncy.get(\"#investment_objective\").select('2');",
-              "err": {},
-              "uuid": "4f33c372-e24f-4581-bfb1-9f00bec8a0c3",
-              "parentUUID": "efcd74b9-9b90-4fd4-b4b4-75f088432c3e",
+              "err": {
+                "message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                "estack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://dev.tanamduit.com/__cypress/runner/cypress_runner.js:158187:13)\n    at https://dev.tanamduit.com/__cypress/runner/cypress_runner.js:159171:16\n    at tryCatcher (https://dev.tanamduit.com/__cypress/runner/cypress_runner.js:10765:23)\n    at https://dev.tanamduit.com/__cypress/runner/cypress_runner.js:5887:41\n    at tryCatcher (https://dev.tanamduit.com/__cypress/runner/cypress_runner.js:10765:23)\n    at Promise._settlePromiseFromHandler (https://dev.tanamduit.com/__cypress/runner/cypress_runner.js:8700:31)\n    at Promise._settlePromise (https://dev.tanamduit.com/__cypress/runner/cypress_runner.js:8757:18)\n    at Promise._settlePromise0 (https://dev.tanamduit.com/__cypress/runner/cypress_runner.js:8802:10)\n    at Promise._settlePromises (https://dev.tanamduit.com/__cypress/runner/cypress_runner.js:8878:18)\n    at _drainQueueStep (https://dev.tanamduit.com/__cypress/runner/cypress_runner.js:5472:12)\n    at _drainQueue (https://dev.tanamduit.com/__cypress/runner/cypress_runner.js:5465:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://dev.tanamduit.com/__cypress/runner/cypress_runner.js:5481:5)\n    at Async.drainQueues (https://dev.tanamduit.com/__cypress/runner/cypress_runner.js:5351:14)\nFrom Your Spec Code:\n    at Context.eval (https://dev.tanamduit.com/__cypress/tests?p=cypress\\integration\\examples\\registrasi-individu-mandiri.js:104:8)",
+                "diff": null
+              },
+              "uuid": "9e49bf28-7ff4-4231-a0ec-11cd9f5df7e5",
+              "parentUUID": "ad6e5cac-ca80-4cad-8876-06c5cfc30ef3",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "4f33c372-e24f-4581-bfb1-9f00bec8a0c3"
+          "passes": [],
+          "failures": [
+            "9e49bf28-7ff4-4231-a0ec-11cd9f5df7e5"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5508,
+          "duration": 60297,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
