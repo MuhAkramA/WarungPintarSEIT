@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-03-28T13:22:48.763Z",
-    "end": "2021-03-28T13:22:56.455Z",
-    "duration": 7692,
+    "start": "2021-03-29T04:38:16.273Z",
+    "end": "2021-03-29T04:38:22.451Z",
+    "duration": 6178,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "c8d41356-c9d3-4f24-ad3a-54080c170339",
+      "uuid": "1e903d90-3313-4d4a-b553-d978f23351fb",
       "title": "",
       "fullFile": "cypress\\integration\\examples\\registrasi-individu-mandiri.js",
       "file": "cypress\\integration\\examples\\registrasi-individu-mandiri.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "0d196fb3-8b32-4677-8669-fc0c18bd6f80",
+          "uuid": "efcd74b9-9b90-4fd4-b4b4-75f088432c3e",
           "title": "My First Test",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "login",
               "fullTitle": "My First Test login",
               "timedOut": null,
-              "duration": 5960,
+              "duration": 5508,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.visit(\"https://dev.tanamduit.com/index.php?rt=account/registration&client=individual\");\ncy.get(\"#beneficial_option label\").eq(0).click();\ncy.get(\"#id_number\").type(\"3604091208990009\");\ncy.get('#fullname').type('roberto baggio');\nvar filepath = 'images/Capture.png';\ncy.get('#ktp').attachFile(filepath);\ncy.get('#selfie').attachFile(filepath);\ncy.get(\"#mother_name\").type('sunsilk');\ncy.get('#place_of_birth').type(\"nugini\");\ncy.get('#date_of_birth').click();\ncy.get('.ui-datepicker-month').select('2');\ncy.get('.ui-datepicker-year').select('1983');\ncy.get('.ui-datepicker-calendar').contains('1').click();\ncy.get('#gender').contains(\"Laki-laki\").click();\ncy.get('#marital_status label:nth-child(2)').click();\ncy.get(\"#education\").select('5');\ncy.get(\"#religion\").select('1');\ncy.get(\"#mobile_phone_number\").type('9182373134');\ncy.get(\"#email\").type('aszzkd@gmail.com');\ncy.get(\"#occupation\").select('2');\ncy.get(\"#gross_income\").select('3');\ncy.get(\"#source_of_fund\").select('7');\ncy.get(\"#investment_objective\").select('2');\ncy.get(\"#next_step_1\").click();",
+              "code": "cy.visit(\"https://dev.tanamduit.com/index.php?rt=account/registration&client=individual\");\ncy.get(\"#beneficial_option label\").eq(0).click();\ncy.get(\"#id_number\").type(\"3604091208990009\");\ncy.get('#fullname').type('roberto baggio');\nvar filepath = 'images/Capture.png';\ncy.get('#ktp').attachFile(filepath);\ncy.get('#selfie').attachFile(filepath);\ncy.get(\"#mother_name\").type('sunsilk');\ncy.get('#place_of_birth').type(\"nugini\");\ncy.get('#date_of_birth').click();\ncy.get('.ui-datepicker-month').select('2');\ncy.get('.ui-datepicker-year').select('1983');\ncy.get('.ui-datepicker-calendar').contains('1').click();\ncy.get('#gender').contains(\"Laki-laki\").click();\ncy.get('#marital_status label:nth-child(2)').click();\ncy.get(\"#education\").select('5');\ncy.get(\"#religion\").select('1');\ncy.get(\"#mobile_phone_number\").type('9182373134');\ncy.get(\"#email\").type('aszzkd@gmail.com');\ncy.get(\"#occupation\").select('2');\ncy.get(\"#gross_income\").select('3');\ncy.get(\"#source_of_fund\").select('7');\ncy.get(\"#investment_objective\").select('2');",
               "err": {},
-              "uuid": "9bb48a83-886e-4f01-aee6-2ca99e10f619",
-              "parentUUID": "0d196fb3-8b32-4677-8669-fc0c18bd6f80",
+              "uuid": "4f33c372-e24f-4581-bfb1-9f00bec8a0c3",
+              "parentUUID": "efcd74b9-9b90-4fd4-b4b4-75f088432c3e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "9bb48a83-886e-4f01-aee6-2ca99e10f619"
+            "4f33c372-e24f-4581-bfb1-9f00bec8a0c3"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5960,
+          "duration": 5508,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
