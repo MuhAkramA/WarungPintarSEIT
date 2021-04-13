@@ -1,5 +1,5 @@
 // type definitions for Cypress object "cy"
-/// <reference types="cypress" />
+///<reference types="Cypress" />
 
 // type definitions for custom commands like "createDefaultTodos"
 describe('My First Test', function() {
