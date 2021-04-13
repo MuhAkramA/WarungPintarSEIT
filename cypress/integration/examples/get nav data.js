@@ -14,7 +14,10 @@ describe('My First Test', function() {
                 'Tenant-Id':'25887230',
             }
         }).then(response => {
-            expect(response.status).to.eq(201)
+            expect(response.status).to.eq(200)
+
+            // expect(response.body).should.be('array')
+            expect(response.body).to.have.property('response')
           })
         
 
