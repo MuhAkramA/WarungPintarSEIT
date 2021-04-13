@@ -2,8 +2,8 @@
 ///<reference types="Cypress" />
 
 // type definitions for custom commands like "createDefaultTodos"
-describe('My First Test', function() {
-  it('login', function() {
+describe('My First Test', function () {
+  it('login', function () {
     cy.visit("https://dev.tanamduit.com//corp//account/login");
     cy.get('#loginname').type("tes678maker")
     cy.get("#password").type("Password123")
@@ -24,9 +24,8 @@ describe('My First Test', function() {
     // cy.get("#aggre_div > label > span").click()
     // cy.get("#prospectus-modal").find("button.close").click()
     // cy.get("#continue").click()
-    cy.get(".navbar-logo").then(function(logbusiness)
-  {
-    cy.log(logbusiness.text())
-  })
+    cy.get(".navbar-logo").then(function (logbusiness) {
+      cy.log(logbusiness.text())
+    })
   })
 })
