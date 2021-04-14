@@ -1,4 +1,6 @@
 {
   "reporter": "mochawesome",
-  "projectId": "7yy2mc"
+  "projectId": "7yy2mc",
+  "viewportHeight": 1080,
+  "viewportWidth": 1920
 }
