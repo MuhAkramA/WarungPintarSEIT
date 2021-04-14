@@ -16,7 +16,7 @@
     "mocha": "^8.3.2"
   },
   "devDependencies": {
-    "cypress": "^6.9.1",
+    "cypress": "^7.1.0",
     "cypress-cucumber-preprocessor": "^4.0.3",
     "cypress-file-upload": "^5.0.5",
     "cypress-iframe": "^1.0.1",
