@@ -32,10 +32,13 @@ describe('My First Test', function () {
                   'X-Ca-Key': '203812398',
                   'X-Ca-Signature': 'bkF0DEEWnONtKyZwL0q5l1UkaUpxIA15U17Z8+jjOis=',
                   'User-Access-Key': token,
-                  'Tenant-Id' : '203812398'
+                  'Tenant-Id' : '203812398',
                 }
+                })
+                .then(response => {
+                    expect(response.body.portfolio[0].productFundManager).to.eq("PT. Bahana TCW Investment Management")
               })
-        
+              
         })
 
     })
