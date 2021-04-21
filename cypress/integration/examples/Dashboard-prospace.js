@@ -1,5 +1,8 @@
 // type definitions for Cypress object "cy"
 ///<reference types="Cypress" />
+///<reference types="Cypress-iframe" />
+
+import 'cypress-iframe'
 
 // type definitions for custom commands like "createDefaultTodos"
 describe('My First Test', function () {
@@ -9,11 +12,7 @@ describe('My First Test', function () {
         cy.get('[data-testid="login__password-input"]').type("@$Mpsh123")
         cy.get('[data-testid="login__submit-button"]').click()
         cy.get('iframe')
-                .first()
-    .then((recaptchaIframe) => {
-      const body = recaptchaIframe.contents()
-      cy.wrap(body).find('#rc-footer').contains('Verify').should('be.visible')
+        cy.frameLoaded('[title="recaptcha challenge"]').its('0.contentDocument.body').should('not.be.empty')
     })
 
   })
-})
