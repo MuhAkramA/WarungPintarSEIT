@@ -8,8 +8,8 @@ import 'cypress-iframe'
 describe('My First Test', function () {
     it('navigates', () => {
         cy.visit('https://scheduling-dev.prospace.io/login')
-        cy.get('[type="email"]').type("Akram@prospace.id")
-        cy.get('[data-testid="login__password-input"]').type("@$Mpsh123")
+        cy.get('[type="email"]').type("darvin@prospace.io")
+        cy.get('[data-testid="login__password-input"]').type("@$123456")
         cy.get('[data-testid="login__submit-button"]').click()
         cy.get('iframe')
         cy.frameLoaded('[title="recaptcha challenge"]').its('0.contentDocument.body').should('not.be.empty')
