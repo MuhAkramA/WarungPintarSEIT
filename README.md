@@ -1,7 +1,6 @@
 # WarungPintarSEIT
 Learning CY with Github Integration
 
-
 Cypress Installation and project setup
 
 1.Download node (official website)
