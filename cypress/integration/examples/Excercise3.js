@@ -24,11 +24,17 @@ describe('exercise 3 SDET warung pintar', function () {
         }).then(response => {
             expect(response.status).eq(200)
             expect(response.body).to.have.property('url')
-            // expect(response.body).to.not.be.null
-
-            // expect(response.body.message).to.eq('Resource has been created')
+            expect(response.body.url).to.eq("http://www.mocky.io/v2/5e4e6fc42f00001f2016a761")
+            expect(response.body).to.not.be.null
+            expect(response.body.message).to.eq('Resource has been created')
         })
 
+        // 4. 401 = unauthorized
+        //    405 = method not allowed
+        //    500 = Internal server error
+        //    502 = bad gateway
+        //    503 = service unavailable
+        //    201 = created
     })
 
 })
