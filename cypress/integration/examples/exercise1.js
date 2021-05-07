@@ -2,8 +2,8 @@
 /// <reference types="cypress" />
 
 // type definitions for custom commands like "createDefaultTodos"
-describe('Scenario 1', function() {
-    it('login', function() {
+describe('eBAY', function() {
+    it('Scenario 1', function() {
       cy.visit("https://www.ebay.com/")
       cy.get('#gh-cat-box').click()
       cy.get('.gh-cat-box-focus').click()
@@ -22,5 +22,15 @@ describe('Scenario 1', function() {
       cy.get('.b-pageheader__text').should('contain','5.5 - 5.9 Inch Cell Phones & Smartphones between IDR5,000,000.00 and IDR7,000,000.00')
 
     })
-    })
+
+    it.only('Scenario 2', function() {
+        cy.visit("https://www.ebay.com/")
+        cy.get('[placeholder="Search for anything"]').type('Macbook')
+        cy.get('select#gh-cat.gh-sb').select('58058').should('contain','Computers/Tablets & Networking')
+        cy.get('input#gh-btn').contains('Search').click()
+        cy.get('.s-item__title').should('have.length', 62)//To make sure all the products are appear on the page
+        cy.get('[data-view="mi:1686|iid:1"]').contains('Apple MacBook Air 13" 256GB SSD 2.8ghz i5 TURBO BOOST OSx-2019 | 3 YEAR WARRANTY')
+
+      })
+})
   
